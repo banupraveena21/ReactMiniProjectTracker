@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: miniprojectapp-app
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn mini_project_tracker.wsgi
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: mini_project_tracker.settings
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: false
