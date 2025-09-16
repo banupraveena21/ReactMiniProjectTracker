@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-gz_8w)6k)*d$#gbu3$nu_u)-^)^1vzzp-ug(aw09ccj*gr(1t6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.onrender.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -147,5 +147,5 @@ REST_FRAMEWORK = {
 }
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",
+    "https://react-mini-project-tracker.vercel.app/login",
 ]
